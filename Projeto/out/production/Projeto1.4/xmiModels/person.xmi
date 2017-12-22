@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+ xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML"
+ xmi:id="_IAw84DC7Eeef7ZDrUbVpmQ" name="person">
+  <eAnnotations xmi:id="_IAw84TC7Eeef7ZDrUbVpmQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_IAw84jC7Eeef7ZDrUbVpmQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IAw84zC7Eeef7ZDrUbVpmQ" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+
+  <packagedElement xmi:type="uml:Class" xmi:id="_IAw85DC7Eeef7ZDrUbVpmQ" name="Person">
+
+    <ownedAttribute xmi:id="_IAw85TC7Eeef7ZDrUbVpmQ" name="name" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+
+    <ownedAttribute xmi:id="_IAw85jC7Eeef7ZDrUbVpmQ" name="age" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+
+  </packagedElement>
+</uml:Model>

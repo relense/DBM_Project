@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE model SYSTEM "../metamodels/model.dtd">
+<model name="Bookstore">
+    <class name="Author">
+        <attribute name="first_name" type="String" required="true" />
+        <attribute name="last_name" type="String" />
+        <attribute name="email" type="String" />
+        <relation name="book"  type="1To1"/>
+        <relation name="cenas" type="1ToN"/>
+    </class>
+    <class name="Book">
+        <attribute name="title" type="String" />
+        <attribute name="pubDate" type="Date" />
+        <attribute name="price" type="double" />
+        <attribute name="quantity" type="int" />
+        <relation name="author" type="NToN"/>
+    </class>
+    <class name="Cenas">
+        <attribute name="name" type="String" />
+        <attribute name="description" type="String" />
+    </class>
+
+</model>

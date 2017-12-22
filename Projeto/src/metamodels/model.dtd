@@ -1,0 +1,15 @@
+<!ELEMENT model (class+)>
+        <!ATTLIST model
+                name CDATA #REQUIRED>
+<!ELEMENT class (attribute+, relation*)>
+        <!ATTLIST class
+                name CDATA #REQUIRED>
+<!ELEMENT attribute (#PCDATA)>
+        <!ATTLIST attribute
+                name CDATA #REQUIRED
+                type CDATA #REQUIRED
+                required (true | false) "false">
+<!ELEMENT relation EMPTY>
+        <!ATTLIST relation
+                name CDATA #REQUIRED
+                type (1ToN | NToN | 1To1) "1To1">
